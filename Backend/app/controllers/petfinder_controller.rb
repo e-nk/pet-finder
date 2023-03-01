@@ -1,4 +1,4 @@
-class TodoController < Sinatra::Base
+class PetController < Sinatra::Base
 
     set :views, './app/views'
 
@@ -20,8 +20,8 @@ class TodoController < Sinatra::Base
         #approach 2 (hash of columns)
         today = Time.now
         data["createdAt"] = today
-        todo = Todo.create(data)
-        [201, todo.to_json]
+        pet = Pet.create(data)
+        [201, pet.to_json]
 
 
             
@@ -34,14 +34,14 @@ class TodoController < Sinatra::Base
 
     get '/pets' do
 
-        todos = Todo.all
-        [200, todos.to_json]
+        pets = Pet.all
+        [200, pets.to_json]
 
     end
 
     get '/view/pets' do
-        @todos = Todo.all
-        erb :todos
+        @pets = Pet.all
+        erb :pets
 
     end
 
@@ -49,9 +49,9 @@ class TodoController < Sinatra::Base
         #rescue bloc
         begin
         data = JSON.parse (request.body.read)
-        todo_id = params['id'].to_i
-        todo = Todo.find(todo_id)
-        todo.update(data)
+        pet_id = params['id'].to_i
+        pet = Pet.find(pet_id)
+        pet.update(data)
         {message: "Pet updated successfully"}.to_json 
         rescue => e
             {
@@ -63,9 +63,9 @@ class TodoController < Sinatra::Base
 
     delete '/pets/destroy/:id' do
         begin
-            todo_id = params['id'].to_i
-            todo = Todo.find(todo_id)
-            todo.destroy
+            pet_id = params['id'].to_i
+            pet = Pet.find(pet_id)
+            pet.destroy
             rescue => e
                 {error: e.message}.to_json
 

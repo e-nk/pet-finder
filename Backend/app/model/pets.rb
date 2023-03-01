@@ -1,4 +1,4 @@
-class Todo < ActiveRecord::Base
+class Pet < ActiveRecord::Base
     enum :status, [:CREATED, :ONGOING, :COMPLETED, :CANCELLED]
     
 end
