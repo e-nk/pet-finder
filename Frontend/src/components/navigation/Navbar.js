@@ -37,10 +37,7 @@ const Navbar = () => {
             <li class="nav-item ms-3 fs-5 link-dark">
               <Link to="/add-pet">Add Pet</Link>
             </li>
-            <div>
-        {/* <div class="btn btn-dark" data-netlify-identity-menu></div> */}
-        <div data-netlify-identity-button>Login/Signup: </div> 
-        </div>
+                  
             
 
         </ul>
