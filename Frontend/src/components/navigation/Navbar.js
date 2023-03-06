@@ -30,18 +30,17 @@ const Navbar = () => {
         <li className="logo nav-header link-dark">
               <Link to="/">Petfinder</Link>
             </li>
-            {/* <button
-            className="nav-toggle"
-            onClick={() => setShowLinks(!showLinks)}
-          >
-            <FaBars />
-          </button> */}
+            
           <li class="nav-item ms-3 fs-5 link-dark">
               <Link to="/pets">Pets</Link>
             </li>
             <li class="nav-item ms-3 fs-5 link-dark">
               <Link to="/add-pet">Add Pet</Link>
             </li>
+            <div>
+        {/* <div class="btn btn-dark" data-netlify-identity-menu></div> */}
+        <div data-netlify-identity-button>Login/Signup: </div> 
+        </div>
             
 
         </ul>
