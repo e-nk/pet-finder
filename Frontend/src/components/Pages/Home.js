@@ -26,7 +26,7 @@ function Home() {
       </div>
         </div>
         <div class="ilustration">
-            <img src="https://images.pexels.com/photos/10875180/pexels-photo-10875180.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image here"></img>
+            <img src="https://images.pexels.com/photos/10875180/pexels-photo-10875180.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></img>
         </div>
       </section>
     </main>
