@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { FaBars} from "react-icons/fa";
+
 import { social } from "./data"
 import Pets from "../Pages/Pets";
 import Home from "../Pages/Home";
