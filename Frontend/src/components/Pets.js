@@ -12,6 +12,9 @@ function Pets() {
   const [addFailed, setAddFailed] = useState(false);
   const [editing, setEditing] = useState(false);
   const [editingPet, setEditingPet] = useState(null);
+  const cors = require ("cors");
+
+  app.use(cors());
 
   useEffect(() => {
     const fetchPets = async () => {
