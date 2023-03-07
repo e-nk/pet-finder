@@ -1,7 +1,8 @@
 # Pet-finder
 This is a simple web application for pet adoption. Users can view a list of available pets and their details, add new pets to the list, and edit or delete existing pets.
 
-Link to project : [![Button Icon]][https://deluxe-genie-ecbb1a.netlify.app/]
+Link to project : 
+[Click Me]: # 'https://deluxe-genie-ecbb1a.netlify.app'
 
 ## Technologies Used
 This project was built with the following technologies:
